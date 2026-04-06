@@ -1,29 +1,30 @@
-<h1 align="center">🤖 Multi-Agent LLM System</h1>
+<h1 align="center">🤖 Multi-Agent AI System</h1>
+
 <p align="center">
-Agent-Based AI • Tool-Orchestrated Reasoning • LLM Systems
+Agent-Based AI • Tool-Orchestrated Reasoning • Memory-Aware Systems
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10+-blue?logo=python"/>
-  <img src="https://img.shields.io/badge/Streamlit-Live_App-red?logo=streamlit"/>
-  <img src="https://img.shields.io/badge/OpenAI-LLM-black?logo=openai"/>
-  <img src="https://img.shields.io/badge/Docker-Ready-blue?logo=docker"/>
+<a href="https://multi-agent-llm-system-dkwzj8rotcwuyqekioeu64.streamlit.app/">
+🚀 <b>Live Demo</b>
+</a>
 </p>
 
 <p align="center">
-  <a href="https://multi-agent-llm-system-dkwzj8rotcwuyqekioeu64.streamlit.app/" target="_blank">
-    🚀 <b>Live Demo</b>
-  </a>
+<img src="https://img.shields.io/badge/Status-Live-success"/>
+<img src="https://img.shields.io/badge/Architecture-Multi--Agent-blue"/>
+<img src="https://img.shields.io/badge/UI-Streamlit-red"/>
 </p>
 
 ---
 
 ## 🎥 Live Demo
 
-👉 Try the app here:  
+👉 Try the app here:
 🔗 https://multi-agent-llm-system-dkwzj8rotcwuyqekioeu64.streamlit.app/
 
-💡 Recommended query: Find AI funding opportunities in Germany and explain eligibility criteria
+💡 Recommended query: 
+Find AI funding opportunities in Germany and explain eligibility criteria
 
 ---
 
@@ -32,11 +33,25 @@ Agent-Based AI • Tool-Orchestrated Reasoning • LLM Systems
 This project implements a **multi-agent AI system** using Large Language Models (LLMs) to simulate:
 
 - 🧩 Task decomposition
-- 🔎 Tool orchestration
-- 🧠 Multi-step reasoning
-- 🧠 Memory-aware responses
+- 🔀 Tool routing
+- 🔎 Tool-integrated retrieval
+- 🧠 Memory-aware reasoning
+- ✍️ Contextual response generation
 
-Instead of a single monolithic model, the system uses **specialized agents** for improved control, modularity, and interpretability.
+Instead of relying on a single LLM, the system uses **specialized agents** to improve modularity, control, and interpretability.
+
+---
+
+## 💡 Why This Project?
+
+Traditional LLM applications rely on a single model, limiting control and reasoning transparency.
+
+This project demonstrates how **agent-based AI systems**:
+
+- Improve reasoning through task decomposition
+- Enable dynamic tool selection
+- Provide modular and scalable architecture
+- Simulate real-world intelligent assistants
 
 ---
 
@@ -69,38 +84,71 @@ Final Response
 
 ---
 
+## 🔄 System Flow
+
+1. User submits query
+2. Planner agent decomposes the task
+3. Tool router selects appropriate tools
+4. Retriever gathers relevant data
+5. Memory module injects past context
+6. Executor generates final response
+
+---
+
 ## 🤖 Agent Components
 
 ### 🧩 Planner Agent
-- Breaks complex queries into structured steps
+- Breaks queries into structured steps
 - Enables multi-step reasoning
 
 ### 🔀 Tool Router
-- Dynamically selects tools based on task
-- Supports modular system expansion
+- Dynamically selects tools based on intent
+- Supports extensibility
 
 ### 🔎 Retriever Agent
-- Integrates external tools and APIs
-- Fetches relevant contextual data
+- Interacts with external tools/APIs
+- Fetches contextual data
 
 ### 🧠 Memory Module
 - Stores previous interactions
 - Enables context-aware responses
 
 ### ✍️ Executor Agent
-- Generates final structured answers
-- Combines reasoning + retrieved knowledge
+- Generates structured responses
+- Combines reasoning + retrieved context
 
 ---
 
 ## ⚙️ Features
 
 - ✅ Multi-agent architecture
-- ✅ Tool routing logic
+- ✅ Dynamic tool routing
 - ✅ Memory-aware reasoning
 - ✅ Fault-tolerant tool integration (fallback system)
-- ✅ Interactive Streamlit UI
+- ✅ ChatGPT-style Streamlit UI
+- ✅ Analytics dashboard for system evaluation
 - ✅ Modular and extensible design
+
+---
+
+## 📊 Analytics Dashboard
+
+The system includes a built-in dashboard to analyze:
+
+- Query and response patterns
+- Response length distribution
+- Tool usage behavior
+- Interaction history
+
+---
+
+## 🛠️ Engineering Highlights
+
+- Designed modular multi-agent architecture
+- Implemented tool routing logic
+- Built memory-aware reasoning pipeline
+- Added fallback mechanisms for robustness
+- Developed interactive UI and analytics dashboard
 
 ---
 
@@ -109,8 +157,8 @@ Final Response
 - **Python**
 - **Streamlit**
 - **OpenAI API (optional)**
-- **FastAPI (optional)**
-- **Docker-ready architecture**
+- **Pandas / Matplotlib (dashboard)**
+- **FastAPI (optional backend)**
 
 ---
 
@@ -134,6 +182,8 @@ What are the eligibility criteria?
 
 Suggest funding for an AI startup
 
+Compare different funding programs
+
 🔐 Configuration
 
 
@@ -144,31 +194,31 @@ Mock Mode (default) → No API required
 
 LLM Mode → Requires OpenAI API key
 
-🔮 Future Improvements
+📚 Key Learnings
 
-🧠 Vector database memory (FAISS)
+Designing agent-based AI systems
 
-🔗 Agent-to-Agent communication (A2A)
+Orchestrating LLM workflows
 
-🌐 Real-time web search integration
+Implementing tool routing and memory
 
-☁️ AWS deployment
+Building reliable AI systems with fallbacks
 
-🎨 Chat-style UI
+Connecting research concepts to real applications
 
-🎯 Real-World Relevance
+🔮 Future Work
 
+Vector database memory (FAISS)
 
+Agent-to-agent communication (A2A)
 
-This project reflects real-world AI systems used in:
+Real-time web search integration
 
-Intelligent personal assistants
+Chat-style UI enhancements
 
-Automotive AI systems
+🧠 Project Summary
 
-Enterprise AI workflows
-
-Decision-support systems
+Built a multi-agent AI system that decomposes tasks, dynamically selects tools, and generates context-aware responses using modular components. The system integrates memory, tool routing, and external tools, simulating real-world intelligent assistant architectures.
 
 🤝 Contributing
 
